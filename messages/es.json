@@ -1,0 +1,17 @@
+{
+  "Index": {
+    "title": "Hello world!",
+    "searchPlaceholder": "Buscar nombre de usuario de GitHub",
+    "search": "Buscar",
+    "fetchError": "Error al obtener el usuario",
+    "repositories": "Repositorios",
+    "followers": "Seguidores",
+    "following": "Siguiendo",
+    "errorBoundary": "Error: {message}",
+    "stars": "Estrellas",
+    "forks": "Bifurcaciones",
+    "openIssues": "Problemas abiertos",
+    "goBackToSearch": "Volver a buscar",
+    "seeRepositories": "Ver Repositorios"
+  }
+}

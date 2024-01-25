@@ -1,0 +1,17 @@
+{
+  "Index": {
+    "title": "Hello world!",
+    "searchPlaceholder": "Search GitHub username",
+    "search": "Search",
+    "fetchError": "Error fetching user",
+    "repositories": "Repositories",
+    "followers": "Followers",
+    "following": "Following",
+    "errorBoundary": "Error: {message}",
+    "stars": "Stars",
+    "forks": "Forks",
+    "openIssues": "Open Issues",
+    "goBackToSearch": "Go back to search",
+    "seeRepositories": "See Repositories"
+  }
+}
