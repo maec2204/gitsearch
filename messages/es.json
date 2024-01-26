@@ -12,6 +12,11 @@
     "forks": "Bifurcaciones",
     "openIssues": "Problemas abiertos",
     "goBackToSearch": "Volver a buscar",
-    "seeRepositories": "Ver Repositorios"
+    "seeRepositories": "Ver Repositorios",
+    "noDescription": "No hay descripción disponible.",
+    "noData": "No hay datos disponibles.",
+    "darkMode": "Modo Oscuro",
+    "lightMode": "Modo Claro",
+    "noRepositories": "No se encontraron repositorios."
   }
 }

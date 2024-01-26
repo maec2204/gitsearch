@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={classMerge(
           roboto.className,
-          'flex justify-center items-center'
+          'flex justify-center items-center dark:bg-[#141D2F]'
         )}
       >
         {children}

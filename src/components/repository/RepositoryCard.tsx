@@ -14,13 +14,44 @@ function RepositoryCard({ data }: RepositoryCardProps) {
 
   if ('message' in data) {
     return (
-      <div className="md:w-1/2 w-full h-full bg-white shadow-md rounded-xl mt-10 p-8 pb-12 flex justify-center items-center">
+      <div className="md:w-1/2 w-full h-full flex-col bg-white dark:bg-semiDark dark:text-white shadow-md rounded-xl mt-10 p-8 pb-12 flex justify-center items-center">
+        <div className="w-full flex justify-end items-center">
+          <Link
+            href={'/'}
+            className="flex justify-start items-center w-auto underline text-electric/80"
+          >
+            <ArrowBackIcon className="w-4 h-4 cursor-pointer" />
+            <span className="text-sm font-medium ml-2 cursor-pointer">
+              {t('goBackToSearch')}
+            </span>
+          </Link>
+        </div>
         <div>{t('errorBoundary', { message: data.message })}</div>
       </div>
     );
   }
+
+  if (Array.isArray(data) && data.length === 0) {
+    return (
+      <div className="md:w-1/2 w-full h-full flex-col bg-white dark:bg-semiDark dark:text-white shadow-md rounded-xl mt-10 p-8 pb-12 flex justify-center items-center">
+        <div className="w-full flex justify-end items-center">
+          <Link
+            href={'/'}
+            className="flex justify-start items-center w-auto underline text-electric/80"
+          >
+            <ArrowBackIcon className="w-4 h-4 cursor-pointer" />
+            <span className="text-sm font-medium ml-2 cursor-pointer">
+              {t('goBackToSearch')}
+            </span>
+          </Link>
+        </div>
+        <div>{t('noRepositories')}</div>
+      </div>
+    );
+  }
+
   return (
-    <div className="md:w-1/2 w-full h-full bg-white shadow-md rounded-xl mt-10 p-8 pb-12">
+    <div className="md:w-1/2 w-full h-full bg-white dark:bg-semiDark shadow-md rounded-xl mt-10 p-8 pb-12">
       <div className="w-full flex justify-end items-center">
         <Link
           href={'/'}
@@ -34,12 +65,17 @@ function RepositoryCard({ data }: RepositoryCardProps) {
       </div>
       {data.map((repo) => (
         <div key={repo.id} className="mb-6">
-          <h2 className="font-bold text-lg leading-6 text-darkBlue capitalize">
+          <h2 className="font-bold text-lg leading-6 text-darkBlue dark:text-white capitalize">
             {repo.name}
           </h2>
-          <h3 className="font-normal text-sm leading-5 text-electric dark:text-electric">
+          <a
+            href={`https://github.com/${repo.full_name}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-normal no-underline text-sm leading-5 text-electric dark:text-electric"
+          >
             {repo.full_name}
-          </h3>
+          </a>
           <p className="font-normal text-sm leading-5 text-newGray mt-2">
             {repo.description}
           </p>

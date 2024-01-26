@@ -1,6 +1,8 @@
-export const dateParser = (date: string): string => {
+export const dateParser = (date: string, locale: string): string => {
     const dateObj = new Date(date);
-    const dateString = dateObj.toDateString();
-    const [weekday, month, day, year] = dateString.split(" ");
-    return `${day} ${month} ${year}`;
+    if (locale === 'es') {
+        return dateObj.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+    } else {
+        return dateObj.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+    }
 };

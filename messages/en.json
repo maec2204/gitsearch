@@ -12,6 +12,11 @@
     "forks": "Forks",
     "openIssues": "Open Issues",
     "goBackToSearch": "Go back to search",
-    "seeRepositories": "See Repositories"
+    "seeRepositories": "See Repositories",
+    "noDescription": "No description available.",
+    "noData": "No data available.",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "noRepositories": "No repositories found."
   }
 }

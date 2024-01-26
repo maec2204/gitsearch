@@ -18,14 +18,14 @@ const SearchBar: React.FC<SearchBarProps> = ({
 
   return (
     <form
-      className="px-2 py-3 w-full flex items-center bg-white mt-9 rounded-xl shadow-lg"
+      className="px-2 py-3 w-full flex items-center bg-white dark:bg-semiDark mt-9 rounded-xl shadow-lg"
       onSubmit={onSubmit}
     >
       <SearchIcon className="w-9 h-9 text-blue-600" />
       <input
         type="text"
         name="gitUser"
-        className="border-none focus:outline-none font-normal text-sm ml-2 w-full placeholder-blue-400"
+        className="bg-transparent border-none focus:outline-none font-normal text-sm ml-2 w-full dark:text-white dark:placeholder-white placeholder-blue-400"
         placeholder={t('searchPlaceholder')}
         value={inputValue}
         onChange={onInputChange}

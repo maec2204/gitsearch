@@ -11,7 +11,7 @@ function RepositoryStatistic({ title, count }: RepositoryStatisticProps) {
       <h3 className="font-normal text-xs leading-4 text-darkSky capitalize">
         {title}
       </h3>
-      <h3 className="font-bold text-lg leading-6 mt-2">{count}</h3>
+      <h3 className="font-bold text-lg leading-6 mt-2 dark:text-white">{count}</h3>
     </div>
   );
 }
