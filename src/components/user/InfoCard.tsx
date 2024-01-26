@@ -82,7 +82,7 @@ function InfoCard({ data = octocat, isLoading, error, locale }: InfoCardProps) {
                 </div>
               </a>
 
-              <div className="w-full">
+              <div className="w-full md:mt-5">
                 <div>
                   <h2 className="font-bold text-lg leading-6 text-darkBlue dark:text-white capitalize">
                     {data.name}
