@@ -17,6 +17,8 @@
     "noData": "No data available.",
     "darkMode": "Dark Mode",
     "lightMode": "Light Mode",
-    "noRepositories": "No repositories found."
+    "noRepositories": "No repositories found.",
+    "copyright": "Goil's challenge - Copyright© 2024",
+    "createdBy": "Created by {user}"
   }
 }

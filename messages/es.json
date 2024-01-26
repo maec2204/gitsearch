@@ -17,6 +17,8 @@
     "noData": "No hay datos disponibles.",
     "darkMode": "Modo Oscuro",
     "lightMode": "Modo Claro",
-    "noRepositories": "No se encontraron repositorios."
+    "noRepositories": "No se encontraron repositorios.",
+    "copyright": "Desafío de Goil - Derechos de autor© 2024",
+    "createdBy": "Creado por {user}"
   }
 }
